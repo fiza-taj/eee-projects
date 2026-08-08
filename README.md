@@ -1,25 +1,38 @@
-# eee-projects
 Fiza Taj
 
-Electrical and Electronics Engineering student.
+Electrical and Electronics Engineering Student
 
 About Me
 
-I am an Electrical and Electronics Engineering student interested in electrical systems, electronics, renewable energy, and practical engineering projects.
+I am an Electrical and Electronics Engineering student with an interest in electrical systems, power systems, renewable energy, electronics, and practical engineering applications. I am continuously developing my technical knowledge and exploring opportunities to apply my engineering skills through projects and hands-on learning.
 
-Skills
+Technical Skills
 
-- C
-- MS Word
+- C Programming
 - MS Excel
-- PowerPoint
-- Electrical and Electronics Engineering fundamentals
+- MS Word
+- Microsoft PowerPoint
+- Electrical & Electronics Engineering Fundamentals
 
 Projects
 
-- Solar Photovoltaic System
-- SCR Turn-On Using Synchronized UJT Relaxation Oscillator
+Solar Photovoltaic System
+
+A hardware-based project focused on the fundamentals and practical implementation of solar photovoltaic power generation.
+
+SCR Turn-On Using Synchronized UJT Relaxation Oscillator
+
+A power electronics project focused on synchronized triggering of an SCR using a UJT relaxation oscillator.
 
 Education
 
-Bachelor of Engineering – Electrical and Electronics Engineering
+Bachelor of Engineering (B.E.) – Electrical and Electronics Engineering
+
+Career Interests
+
+- Electrical Engineering
+- Power Systems
+- Renewable Energy
+- Power Electronics
+- Electrical & Industrial Applications
+
