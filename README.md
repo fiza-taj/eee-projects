@@ -16,7 +16,7 @@ Technical Skills
 
 Projects
 
-Solar Photovoltaic System
+Solar Power Photovoltaic System
 
 A hardware-based project focused on the fundamentals and practical implementation of solar photovoltaic power generation.
 
