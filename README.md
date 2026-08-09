@@ -8,6 +8,7 @@ I am an Electrical and Electronics Engineering student with an interest in elect
 
 Technical Skills
 
+- Control System
 - C Programming
 - MS Excel
 - MS Word
@@ -35,4 +36,5 @@ Career Interests
 - Renewable Energy
 - Power Electronics
 - Electrical & Industrial Applications
+- EV
 
