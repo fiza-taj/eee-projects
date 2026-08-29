@@ -1,4 +1,4 @@
-### Hi, I'm Fiza Taj 👋
+ I'm Fiza Taj 
 
 ⚡ Electrical and Electronics Engineering Student @ Rao Bahadur Y Mahabaleshwarappa Engineering College (RBYMEC), Ballari, India  
 🔍 Interested in **Power Systems, Power Electronics, Control Systems & Renewable Energy**  
