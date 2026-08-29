@@ -1,61 +1,116 @@
-SCR Turn-On Circuit Using Synchronized UJT Relaxation Oscillator
+# ⚡ SCR Turn-On Circuit using Synchronized UJT Relaxation Oscillator
 
-Project Overview
+*Mini Project — Batch A4, Section A*
 
-This project demonstrates the turn-on of a Silicon Controlled Rectifier (SCR) using a synchronized UJT relaxation oscillator. The circuit generates synchronized trigger pulses required to control the firing of the SCR at a desired point of the AC waveform.
+A power electronics mini project on synchronized triggering of a Silicon Controlled Rectifier (SCR) using a UJT (Unijunction Transistor) relaxation oscillator, guided by **Deepa B** (Project Guide), **Mr. Elia Sundram** and **Mr. Gangadhar J** (Project Co-ordinators), under **Dr. S Kotresh**, HOD, Dept. of EEE.
 
-Objective
+**Status:** ✅ Completed
 
-The main objective of this project is to study and implement a reliable SCR triggering circuit using a Unijunction Transistor (UJT) relaxation oscillator and understand the relationship between synchronization, triggering pulses, and SCR conduction.
+---
 
-Working Principle
+## 📋 Overview
 
-The circuit uses a UJT relaxation oscillator to generate firing pulses for the SCR. The oscillator produces a pulse when the capacitor voltage reaches the UJT peak-point voltage.
+An SCR is turned on by applying a suitable gate pulse and stays conducting until current falls below its holding value. This project builds a **synchronized UJT relaxation oscillator** circuit to generate sharp, consistent gate pulses in sync with the AC supply — enabling precise firing-angle control and smooth regulation of power delivered to a load.
 
-A synchronization circuit ensures that the triggering pulses occur at the appropriate point of the AC supply waveform. The generated pulse is applied to the gate terminal of the SCR, causing the SCR to turn ON and conduct current through the load.
+---
 
-By controlling the firing instant, the conduction of the SCR can be controlled, which is an important principle used in power electronic switching and AC power control.
+## 🎯 Objective
 
-Main Components
+- Achieve precise SCR triggering synchronized with the AC waveform
+- Control the turn-on timing of the SCR for power regulation
 
-- Silicon Controlled Rectifier (SCR)
-- Unijunction Transistor (UJT)
-- Resistors
-- Capacitors
-- Diodes
-- Synchronizing circuit
-- Power supply
-- Load
-- Triggering and protection components
+---
 
-Key Concepts
+## ⚙️ Components & Specifications
 
-- SCR triggering and firing angle
-- UJT relaxation oscillator
-- Synchronization with AC supply
-- Gate pulse generation
-- Controlled rectification
-- Power electronic switching
+| Component | Purpose | Specification |
+|---|---|---|
+| **SCR** (Silicon Controlled Rectifier) | Main power control device; conducts when triggered | 400V, I_T = 4A |
+| **UJT** (Unijunction Transistor) | Relaxation oscillator generating trigger pulses | V_B2B1 = 10–20V |
+| **Capacitor** | Charges/discharges to control UJT triggering time | 0.1µF – 0.47µF, 100V |
+| **Resistor** | Adjusts capacitor charging rate; controls firing angle | 100kΩ potentiometer |
+| **Zener Diode** | Regulates DC supply to UJT circuit; stable reference voltage | 12V, 0.5W |
 
-Applications
+---
 
-SCR triggering circuits are commonly used in:
+## 🔬 Working
 
+When AC supply is applied, part of it is rectified and regulated by the Zener diode to supply the UJT relaxation oscillator. The capacitor charges through the variable resistor; once it reaches the UJT's peak-point voltage, the UJT switches ON and the capacitor discharges rapidly through the pulse transformer's primary winding. This induces a sharp triggering pulse in the secondary winding, applied to the SCR's gate, turning it ON.
+
+Adjusting the resistor varies the capacitor's charging time — and therefore the SCR's firing angle (α). This repeats every half cycle, producing gate pulses synchronized with the AC supply, allowing smooth power control to loads such as lamps, heaters, or motors.
+
+---
+
+## 🖼️ Hardware Model
+
+![Hardware Model](./scr_project_images/hardware_model.jpg)
+
+---
+
+## 📈 Results — Output Waveforms
+
+**Half-wave output at firing angle = 0°**
+![Output waveform at angle 0](./scr_project_images/output_waveform_angle_0.jpg)
+
+**Load waveform at firing angle = 90°**
+![Output waveform at angle 90](./scr_project_images/output_waveform_angle_90.jpg)
+
+**Waveform across load (V_load / V_SCR)**
+![Waveform across load](./scr_project_images/output_waveform_load.jpg)
+
+The synchronized UJT oscillator successfully generated sharp, consistent gate pulses across varying firing angles, confirming reliable SCR turn-on and controllable phase delay.
+
+---
+
+## 🛠️ Tech / Components Used
+
+`SCR` `UJT Relaxation Oscillator` `Zener Diode` `Power Electronics` `Circuit Analysis`
+
+---
+
+## 🌍 Applications
+
+- Speed control of AC and DC motors
+- Light dimming and heating control
 - Controlled rectifiers
-- AC power controllers
-- Motor speed control
-- Light dimming circuits
-- Industrial power control
-- Heating control systems
+- Automatic power switching
+- Pulse generators
+- Sawtooth wave generators
+- Switch-mode power supplies (SMPS)
 
-Project Outcome
+---
 
-The project provides practical understanding of SCR triggering using a synchronized UJT relaxation oscillator and demonstrates how synchronized gate pulses can be used to control SCR conduction.
+## ✅ Advantages
 
-Project Files
+- Precise and stable triggering
+- Accurate phase control
+- Sharp, fast-rising pulses with efficient, robust triggering
+- Minimizes power dissipation
+- Circuit simplicity and cost-effectiveness
 
-- Presentation – Project presentation in PDF format
+---
 
-Conclusion
+## 📝 Conclusion
 
-The project demonstrates a practical method of generating synchronized firing pulses for SCR control using a UJT relaxation oscillator. It provides a foundation for understanding SCR-based power control circuits and their applications in power electronics.
+The SCR turn-on circuit using a synchronized UJT relaxation oscillator proved an efficient and reliable method for controlling SCR firing angle in AC circuits. Adjusting the resistor and capacitor values in the timing network allowed precise control of output power, resulting in smooth, stable operation — making this method widely applicable in light dimmers, controlled rectifiers, and motor speed control systems.
+
+---
+
+## 📚 References
+
+1. Md. Moyeed Abrar (2018), *International Journal of Advanced Technology and Engineering Exploration* — synchronized UJT trigger circuit for SCR turn-on, improved phase-controlled stability.
+2. M. H. Rashid (2017), *Power Electronics: Circuits, Devices and Applications*, Pearson Education — UJT relaxation oscillator working and SCR triggering method.
+3. M. D. Singh & K. B. Khanchandani (2011), *Power Electronics*, Tata McGraw-Hill — synchronized UJT oscillator firing circuit and phase control in AC rectifiers.
+
+---
+
+## 👥 Team
+
+| Name | USN |
+|---|---|
+| Afrin Sadaf S K | 3VC23EE003 |
+| D Ghousiya Taskeen | 3VC23EE018 |
+| Fiza Taj | 3VC23EE021 |
+| Naseema P | 3VC23EE037 |
+
+*Electrical and Electronics Engineering Students, RBYMEC*
