@@ -37,10 +37,10 @@ Varying the resistor changes the capacitor's charging time, and therefore the SC
 
 ## Results
 
-**Output waveform at firing angle = 0°**
+**Output waveform at firing angle = 0 degrees**
 ![Output waveform at angle 0](./scr_project_images/output_waveform_angle_0.jpg)
 
-**Output waveform at firing angle = 90°**
+**Output waveform at firing angle = 90 degrees**
 ![Output waveform at angle 90](./scr_project_images/output_waveform_angle_90.jpg)
 
 **Waveform across load**
